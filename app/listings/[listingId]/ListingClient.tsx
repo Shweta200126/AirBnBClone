@@ -161,7 +161,8 @@ const ListingClient: React.FC<ListingClientProps> = ({
                 disabled={isLoading}
                 disabledDates={disabledDates}
                 guestOptions={listing.guestCount} 
-                dayCount={0}              />
+                dayCount={0}              
+              />
             </div>
           </div>
         </div>
