@@ -33,7 +33,7 @@ const ListingReservation: React.FC<ListingReservationProps> = ({
 
     const [guests, setGuests] = useState(1);
 
-  const handleGuestsChange = (event) => {
+  const handleGuestsChange = (event: any) => {
     const newGuests = parseInt(event.target.value, 10);
     setGuests(newGuests);
   };
