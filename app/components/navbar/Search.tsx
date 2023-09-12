@@ -47,19 +47,23 @@ const Search = () => {
     return 'Any Week'
   }, [startDate, endDate]);
 
-  const guestLabel = useMemo(() => {
-  const guestCountNumber = parseInt(guestCount);
+   const guestLabel = useMemo(() => {
+  // Check if guestCount is defined and not null
+  if (guestCount !== undefined && guestCount !== null) {
+    const guestCountNumber = parseInt(guestCount);
 
-  if (!isNaN(guestCountNumber)) {
-    if (guestCountNumber === 1) {
-      return `${guestCountNumber} Guest`;
-    } else if (guestCountNumber >= 1) {
-      return `${guestCountNumber} Guests`;
+    if (!isNaN(guestCountNumber)) {
+      if (guestCountNumber === 1) {
+        return `${guestCountNumber} Guest`;
+      } else if (guestCountNumber >= 1) {
+        return `${guestCountNumber} Guests`;
+      }
     }
   }
 
   return 'Add Guests';
 }, [guestCount]);
+
 
   return ( 
     <div
