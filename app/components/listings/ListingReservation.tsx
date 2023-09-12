@@ -40,7 +40,7 @@ const ListingReservation: React.FC<ListingReservationProps> = ({
 
   
     // Calculate total price based on the number of guests
-    const totalWithGuests = (dayCount <= 1 ? 1 : dayCount) * guests * price;
+    const totalWithGuests = (dayCount <= 1 ? 1 : dayCount) * price * guests ;
 
   return ( 
     <div 
@@ -138,7 +138,7 @@ const ListingReservation: React.FC<ListingReservationProps> = ({
           Total
         </div>
         <div>
-           {dayCount > 1 ? `${price} X ${dayCount} nights` : dayCount === 1 ? `${price} X ${dayCount} night` : ''}
+        {dayCount > 1 && guests > 1 ? `$ ${price} X ${guests} guests X ${dayCount} nights` : dayCount === 1 && guests === 1 ? `$ ${price} X ${guests} guest X ${dayCount} night` : dayCount > 1 && guests === 1 ? `$ ${price} X ${guests} guest X ${dayCount} nights` : dayCount === 1 && guests > 1 ? `$ ${price} X ${guests} guests X ${dayCount} night` : ''}
         </div>
         <div>
         $ {totalWithGuests}

@@ -161,7 +161,10 @@ const ListingClient: React.FC<ListingClientProps> = ({
                 disabled={isLoading}
                 disabledDates={disabledDates}
                 guestOptions={listing.guestCount} 
-                dayCount={0} 
+                dayCount={differenceInCalendarDays(
+                  dateRange.endDate || new Date(),  
+                  dateRange.startDate || new Date() 
+                )}
               />
             </div>
           </div>
