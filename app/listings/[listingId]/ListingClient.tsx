@@ -164,7 +164,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
                 dayCount={differenceInCalendarDays(
                   dateRange.endDate || new Date(),  
                   dateRange.startDate || new Date() 
-                )}             
+                )}
               />
             </div>
           </div>
