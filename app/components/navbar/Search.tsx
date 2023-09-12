@@ -51,11 +51,12 @@ const Search = () => {
     if (guestCount === '1') {
           return `${guestCount} Guest`;
         }
-        else {
+        else if (guestCount >= '1') {
             return `${guestCount} Guests`; 
         }
-
-    return 'Add Guests';
+        else {
+          return 'Guests';
+        }
   }, [guestCount]);
 
   return ( 
