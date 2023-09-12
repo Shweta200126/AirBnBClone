@@ -4,7 +4,7 @@ Website: [Airbnb Clone](clone-airbnb-psi.vercel.app)
 
 This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
 
-Features:
+## Features:
 
 - Tailwind design
 - Tailwind animations and effects
@@ -26,6 +26,12 @@ Features:
 - Favorites system
 - Shareable URL filters
     - Lets say you select a category, location and date range, you will be able to share URL with a logged out friend in another browser and they will see the same results
+
+To run locally:
+
+### Fork this repository
+
+and then
 
 ### Cloning the repository
 
