@@ -48,16 +48,18 @@ const Search = () => {
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
-    if (guestCount === '1') {
-          return `${guestCount} Guest`;
-        }
-        else if (guestCount >= '1') {
-            return `${guestCount} Guests`; 
-        }
-        else {
-          return 'Guests';
-        }
-  }, [guestCount]);
+  const guestCountNumber = parseInt(guestCount);
+
+  if (!isNaN(guestCountNumber)) {
+    if (guestCountNumber === 1) {
+      return `${guestCountNumber} Guest`;
+    } else if (guestCountNumber >= 1) {
+      return `${guestCountNumber} Guests`;
+    }
+  }
+
+  return 'Add Guests';
+}, [guestCount]);
 
   return ( 
     <div
