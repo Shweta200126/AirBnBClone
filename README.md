@@ -55,13 +55,6 @@ GITHUB_SECRET=
 NEXTAUTH_SECRET=
 ```
 
-### Setup Prisma
-
-```shell
-npx prisma db push
-
-```
-
 ### Start the app
 
 ```shell
