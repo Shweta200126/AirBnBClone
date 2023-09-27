@@ -2,6 +2,9 @@
 
 Website: [Airbnb Clone](clone-airbnb-psi.vercel.app)
 
+![image](https://github.com/Shweta200126/AirBnBClone/assets/72426535/d2aa7a94-3097-4ead-8a69-3d1c128870c6)
+
+
 This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
 
 ## Features:
